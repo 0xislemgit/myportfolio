@@ -1,16 +1,28 @@
-@font-face {
-    font-family: "dn";
-    src: url("Death-Note.ttf");
-}
-
-body {
-    font-family: "dn";
-    box-sizing: border-box;
+* {
+    font-family: "Cormorant Garamond", serif;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    background-color: black;
-    color: white;
+}
+
+body {
+    padding-top: 100px;
+}
+
+input {
+    outline: none;
+}
+
+textarea {
+    resize: none;
+    outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
 }
 
 ul {
@@ -18,82 +30,183 @@ ul {
 }
 
 a {
-    text-decoration: none;
     color: inherit;
+    text-decoration: none;
 }
 
-.title {
-    color: black;
-    font-size: 40px;
-}
-
-nav {
+button {
+    outline: none;
+    border: none;
     background-color: white;
+}
+
+.name {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100px;
-}
-
-nav ul {
-    font-size: 25px;
-    display: flex;
-    align-items: center;
-    gap: 50px;
-}
-
-nav ul li a {
-    display: block;
-    color: black;
-    padding: 10px;
-    border-radius: 0 0 0 20%;
-    border: 1px solid black;
-    transition: all 0.5s ease;
-    box-shadow: inset 0 0 0 0 black;
-}
-
-nav ul li a:hover {
-    color: white;
-    box-shadow: inset 0 -75px 0 0 black;
-}
-
-.top {
-    display: flex;
-    height: calc(100vh - 100px);
-    text-align: center;
     justify-content: center;
+    font-weight: 400;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.current {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+header nav ul {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-weight: 500;
+}
+
+.about {
+    display: flex;
     align-items: center;
     flex-direction: column;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 75px;
+    gap: 50px;
+    padding: 0 500px;
+    line-height: 1.75;
 }
 
-.top h1 {
-    font-size: 60px;
-}
-
-.top p {
-    font-size: 40px;
-}
-
-.section-title {
-    text-align: center;
-    font-size: 60px;
+.about a {
     text-decoration: underline;
-    text-underline-offset: 20px;
+    text-underline-offset: 7px;
 }
 
-.sk {
-    height: 80vh;
-    font-size: 80px;
+.about p {
+    text-align: justify;
+}
+
+.contact-title {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    margin-top: 75px;
+    padding: 0 300px;
+    padding-bottom: 50px;
+}
+
+.socials {
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.social {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.social p {
+    font-size: 32px;
+    text-align: center;
+}
+
+.social a {
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+
+.s {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.contact form label {
+    font-weight: 600;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input::placeholder, textarea::placeholder {
+    font-weight: bold;
+}
+
+.contact form input {
+    border: 1px solid black;
+    width: 400px;
+    height: 20px;
+    padding: 10px;
+}
+
+.contact form textarea {
+    border: 1px solid black;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+}
+
+.send {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid black;
+    width: 75px;
+}
+
+.send:hover {
+    cursor: pointer;
+}
+
+.work {
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-top: 75px;
+    padding: 0 350px;
 }
 
-.sk i {
-    transition: all 0.5s ease;
+.projects {
+    text-align: justify;
 }
 
-.sk i:hover {
-    transform: scale(110%);
-    color: gray;
+.project {
+    margin-bottom: 50px;
+}
+
+.project-title {
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+.desc {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.language {
+    margin-top: 5px;
+    font-size: 25px;
+}
+
+.view {
+    display: inline-block;
+    margin-top: 15px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.view:hover {
+    cursor: pointer;
 }
