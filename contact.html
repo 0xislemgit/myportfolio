@@ -1,81 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ISLEM AMRANI - Contact</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Islem Amrani — Contact</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1 class="name">Islem Amrani</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="work.html">Work</a></li>
-                <li><a href="contact.html" class="current">Contact</a></li>
-                <li><a href="">CV</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section class="contact">
-        <h1 class="contact-title">Get in touch with me</h1>
-        <div class="socials">
-            <div class="social">
-                <p><span class="s">Instagram:</span> @0xislem</p>
-                <a target="_blank" href="https://www.instagram.com/0xislem/"><i class="fa-brands fa-square-instagram"></i></a>
-            </div>
-            <div class="social">
-                <p><span class="s">Github:</span> @islemamrani</p>
-                <a target="_blank" href="https://www.github.com/islemamrani/"><i class="fa-brands fa-github"></i></a>
-            </div>
-            <div class="social">
-                <p><span class="s">Tiktok:</span> @0xislem</p>
-                <a target="_blank" href="https://www.tiktok.com/@0xislem"><i class="fa-brands fa-tiktok"></i></a>
-            </div>
-            <div class="social">
-                <p><span class="s">Facebook:</span> @Islem Amrani</p>
-                <a target="_blank" href="https://www.facebook.com/islem.amrani.444174/"><i class="fa-brands fa-facebook-f"></i></a>
-            </div>
-            <div class="social">
-                <p><span class="s">Gmail:</span> islemamranicontact@gmail.com</p>
-                <a target="_blank" href="https://mail.google.com/mail/u/0/#inbox"><i class="fa-solid fa-message"></i></a>
-            </div>
-        </div>
-        <form>
-            <div class="f">
-                <input autocomplete="off"
-  autocorrect="off"
-  autocapitalize="off"
-  spellcheck="false" placeholder="Name" type="text" name="name" class="n" required>
-            </div>
-            <div class="f">
-                <input autocomplete="off"
-  autocorrect="off"
-  autocapitalize="off"
-  spellcheck="false" placeholder="Email" type="email" name="email" class="email" required>
-            </div>
-            <div class="f">
-                <textarea autocomplete="off"
-  autocorrect="off"
-  autocapitalize="off"
-  spellcheck="false" placeholder="Message" name="message" class="msg"></textarea required>
-            </div>
-            <button onclick="send()" type="submit" class="send">Send</button>
-        </form>
+  <header class="container">
+    <h1 class="name">Islem Amrani</h1>
+    <nav>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a class="current" href="contact.html">Contact</a></li>
+        <li><a href="#">CV</a></li>
+        <button class="toggle-darkmode"><i class="fa-solid fa-sun"></i></button>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="socials">
+        <a class="social" href="https://www.instagram.com/0xislem/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+            <span>Instagram</span>
+        </a>
+        <a class="social" href="https://github.com/islemamrani/" target="_blank">
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub</span>
+        </a>
+            <a class="social" href="https://www.tiktok.com/@0xislem" target="_blank">
+            <i class="fa-brands fa-tiktok"></i>
+        <span>TikTok</span>
+        </a>
+        <a class="social" href="https://www.facebook.com/islem.amrani.444174/" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+            <span>Facebook</span>
+        </a>
+        <a class="social" href="mailto:islem@example.com">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Email</span>
+        </a>
     </section>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
-    (function(){
-        emailjs.init({
-            publicKey: "ax8TsLpSI-RNDElgm",
-        });
-    })();
-    </script>
-    <script src="send.js"></script>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
