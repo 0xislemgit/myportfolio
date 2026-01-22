@@ -10,7 +10,7 @@
 
   <div class="gadgets">
     <button class="toggle-dm">
-      <img class="dm-icon" src="moon.svg">
+      <img class="dm-icon" src="assets/moon.svg">
     </button>
   </div>
 
@@ -28,18 +28,83 @@
 
         <div class="home-buttons">
           <div class="button-container">
-            <button class="about"><img src="aboutblack.svg"></button>
+            <button class="win-trigger" data-window="about">
+              <img class="about-icon" src="assets/aboutblack.svg">
+            </button>
             <h1>About</h1>
+          </div>
+          <div class="button-container">
+            <button class="win-trigger" data-window="contact">
+              <img class="contact-icon" src="assets/phoneblack.svg">
+            </button>
+            <h1>Contact</h1>
+          </div>
+          <div class="button-container">
+            <button class="win-trigger" data-window="work">
+              <img class="work-icon" src="assets/workblack.svg">
+            </button>
+            <h1>Work</h1>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="window about-window">
+  <div class="window about-window hide" id="about">
     <div class="window-title">
       <h1 class="tab-name">About</h1>
       <button class="close-btn">[x]</button>
+    </div>
+    <div class="about-container">
+      <div class="main-about">
+        <img class="islem" src="assets/islemblack.svg">
+        <div>
+          <h1>Islem Amrani</h1>
+          <p>Algerian Computer Science Student at USTO.</p>
+          <p>Former Fossbay member.</p>
+        </div>
+      </div>
+      <h1 class="gadjet-title">Education</h1>
+      <div class="interests">
+        <div><ul><li>Bacalaureat in mathematics</li></ul></div>
+        <h1 class="gadjet-title">Skills</h1>
+        <div><ul><li>HTML</li><li>CSS</li><li>Javascript</li><li>Typescript</li><li>C++</li><li>Java</li><li>Python</li><li>Godot</li></ul></div>
+        <h1 class="gadjet-title">Interests</h1>
+        <div><ul><li>Web development</li><li>Game development</li><li>Pixel art</li><li>Gym</li></ul></div>
+        <h1 class="gadjet-title">Languages</h1>
+        <div><ol><li>Arabic (native)</li><li>English</li><li>French</li></ol></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="window contact-window hide" id="contact">
+    <div class="window-title">
+      <h1 class="tab-name">Contact</h1>
+      <button class="close-btn">[x]</button>
+    </div>
+    <div class="main-contact">
+      <h1>You can email me here</h1>
+      <button class="email-me"><a href="mailto:islemamranicontact@gmail.com">Email me</a></button>
+      <div class="socials">
+        <a href="https://www.instagram.com/0xislem/">Instagram: 0xislem</a>
+        <a href="https://github.com/0xislemgit">Github: 0xislemgit</a>
+        <p>Discord: 0xislem</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="window work-window hide" id="work">
+    <div class="window-title">
+      <h1 class="tab-name">Work</h1>
+      <button class="close-btn">[x]</button>
+    </div>
+    <div class="main-contact">
+      <h1 class="gadjet-title">Projects</h1>
+      <div class="project">
+        <h1>Minio</h1>
+        <p>A 1bit 2D simple pixel art adventure platformer made completely using Godot Engine 4</p>
+        <button><a href="https://0xislem.itch.io/minio">Play game</a></button>
+      </div>
     </div>
   </div>
 
